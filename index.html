@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <title>Instagram</title>
+</head>
+
+
+<body>
+    <nav class="navbar navbar-expand-lg bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <i class="fa-brands fa-instagram"></i>
+
+            Instagram</a>
+        
+
+
+            <button type="button" class="btn btn-success" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo">Create a New Post</button>
+           
+            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Create a New Post</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                    <form>
+                      <div class="mb-3">
+                        <label for="message-text" id="caption" class="col-form-label">Caption:</label>
+                        <textarea class="form-control" id="message-text"></textarea>
+                      </div>
+                    </form>
+                    <div class="row">
+                        <div class="col-1">
+                            <button type="button" class="btn btn-light"><i class="fa-solid fa-camera"></i></button>
+                        </div>
+                        <div class="col-1">
+                            <button type="button" class="btn btn-light"><i class="fa-solid fa-location-dot"></i></button>
+                        </div>
+                    </div>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button"class="btn btn-success" class="btn btn-primary" >Publish</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+        </div>
+    
+        <div class="dropdown">
+            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                <i class="fa-solid fa-gear"></i>
+            </button>
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+              <li><a class="dropdown-item" href="#">Accessibility</a></li>
+              <li><a class="dropdown-item" href="#">Profile</a></li>
+              <li><a class="dropdown-item" href="#">Privacy and Data</a></li>
+              <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="#" id="logOut">Log Out</a></li>
+            </ul>
+          </div>
+          
+        </div>
+    </nav>
+<br>
+<br>
+
+
+
+
+
+           
+<ul class="nav justify-content-center" id="myTab" role="tablist">
+    <li class="nav-item" role="presentation">
+      <a class="nav-link active" id="home-tab" data-bs-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true"><i class="fa-regular fa-square"></i></a>
+    </li>
+    <li class="nav-item" role="presentation">
+      <a class="nav-link" id="profile-tab" data-bs-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false"><i class="fa-solid fa-table-cells"></i></a>
+    </li>
+  </ul>
+  
+  <div class="tab-content" id="myTabContent">
+    <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+        
+        <div class="card mx-auto" style="max-width: 700px;">
+            <div class="card-header" id="mycard">
+              <span class="ml-2 font-weight-bold" id="bold">Mi perro</span>
+              <span>14:50</span>
+            </div>
+            <img src="https://static.fundacion-affinity.org/cdn/farfuture/PVbbIC-0M9y4fPbbCsdvAD8bcjjtbFc0NSP3lRwlWcE/mtime:1643275542/sites/default/files/los-10-sonidos-principales-del-perro.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">300 Likes</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            </div>
+          </div>
+
+          <br>
+          <br>
+          <br>
+          <div class="card mx-auto" style="max-width: 700px;">
+            <div class="card-header" id="mycard">
+              <span class="ml-2 font-weight-bold" id="bold">Día de gym mirando a la gente
+              </span>
+              <span>12:31</span>
+            </div>
+            <img src="https://i.blogs.es/410bab/danielle-cerullo-cqfnt66ttzm-unsplash/1024_2000.webp" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">142 Likes</h5>
+              <p class="card-text">Uno de los mayores placeres de la vida es poder pasearse por el gimnasio y no hacer deporte, así como embriagarte del sudor humano. Algún día tendré que volver, tanto postureo sin hacer deporte no es bueno #postureoInutil.</p>
+            </div>
+          </div>
+
+          <br>
+          <br>
+          <br>
+          <div class="card mx-auto" style="max-width: 700px;">
+            <div class="card-header" id="mycard">
+              <span class="ml-2 font-weight-bold" id="bold">De vacaciones por Ciudad Real</span>
+              <span>11:22</span>
+            </div>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/9/96/Barbados_beach.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">2 Likes</h5>
+              <p class="card-text">Buaa, si hubiera sabido antes que Ciudad Real no tenía playa no hubiera cogido el viaje que me ofrecían desde tusviajes@tucartera.com. Aun así me lo pasé guay #destinosInesperados #porRellenarAlgo.</p>
+            </div>
+          </div>
+
+          <br>
+          <br>
+          <br>
+          <div class="card mx-auto" style="max-width: 700px;">
+            <div class="card-header" id="mycard">
+              <span class="ml-2 font-weight-bold" id="bold">Menuda paella cocinan en este restaurante chino</span>
+              <span>15:12</span>
+            </div>
+            <img src="https://www.brillante.es/wp-content/uploads/2017/05/paella-mixta-800x477.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">155 Likes</h5>
+              <p class="card-text">Imaginad ir a un restaurante chino y que os obsequien con una paella cuando has pedido el plato "Familia Feliz". Es como que van a hacer lo que les dé la gana, pero en este caso sales ganando #niTanMal #paellaPael #juegoDePalabras.</p>
+            </div>
+          </div>
+
+          <br>
+          <br>
+          <br>
+          <div class="card mx-auto" style="max-width: 700px;">
+            <div class="card-header" id="mycard">
+              <span class="ml-2 font-weight-bold" id="bold">Ahora sí, esgri-meando</span>
+              <span>20:13</span>
+            </div>
+            <img src="https://guiafitness.com/wp-content/uploads/esgrima-caracteristicas.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">20K Likes</h5>
+              <p class="card-text">No sé si el de la foto es de venezuela o si es de rusia, el color de arriba no lo tengo claro, que en las caretas no se ve bien. Por lo demás, un guiño a mi deporte y a vuestro país, jefes :D </p>
+            </div>
+          </div>
+
+          <br>
+          <br>
+          <br>
+          <div class="card mx-auto" style="max-width: 700px;">
+            <div class="card-header" id="mycard">
+              <span class="ml-2 font-weight-bold" id="bold">Un día de tardeo entre amigos</span>
+              <span>18:03</span>
+            </div>
+            <img src="https://www.lavanguardia.com/uploads/2020/04/13/5f15f01852883.jpeg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">19K Likes</h5>
+              <p class="card-text">Los envidiosos dirán que son los de la mítica serie. Que se busquen sus propios amigos si tanto celan mi vida. Chicos, sois gente to maja #yaDeliro #seMeVaLaOlla.</p>
+            </div>
+          </div>
+
+          <br>
+          <br>
+          <br>
+          <div class="card mx-auto" style="max-width: 700px;">
+            <div class="card-header" id="mycard">
+              <span class="ml-2 font-weight-bold" id="bold">Mi último negocio</span>
+              <span>21:30</span>
+            </div>
+            <img src="https://www.expedit.eu/media/11172/bakery-solutions01.jpg?mode=crop&heightratio=0.4845360824742268041237113402&width=1110" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">542 Likes</h5>
+              <p class="card-text">Ya veis que mis posts son populares, le da like todo el mundo. Pues sí, es lo que veis, una panadería. Aquí echó CV Jack Sparrow, que necesitaba mucha harina. ¿Para qué? Para pan pan para pan pan para pan pan para pan.</p>
+            </div>
+          </div>
+
+          <br>
+          <br>
+          <br>
+          <div class="card mx-auto" style="max-width: 700px;">
+            <div class="card-header" id="mycard">
+              <span class="ml-2 font-weight-bold" id="bold">Qué bien se está en el jardín</span>
+              <span>07:50</span>
+            </div>
+            <img src="https://images.unsplash.com/photo-1558871585-4c3574a1b7cd?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1171&q=80" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">112 Likes</h5>
+              <p class="card-text">Sí, es mi jardín. Es grande, porque me lo puedo permitir. Es así como nos las gastamos los informáticos: altos sueldos y grandes jardines. #richDeveloper #nature</p>
+            </div>
+          </div>
+
+          <br>
+          <br>
+          <br>
+          <div class="card mx-auto" style="max-width: 700px;">
+            <div class="card-header" id="mycard">
+              <span class="ml-2 font-weight-bold" id="bold">Mi pájaro</span>
+              <span>13:26</span>
+            </div>
+            <img src="https://www.zoomadrid.com/content/dam/zoo/images/exhibits/actividad-educativa-de-aves-rapaces/Actividad-educativa-aves-rapaces-Zoo-Madrid-3.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">144 Likes</h5>
+              <p class="card-text">Me ha crecido más de la cucenta el pajarraco, así que lo tengo en libertad en mi jardín. Otro día os hago una foto del jardín, no tiene pérdida. #adoptaNoCompres</p>
+            </div>
+          </div>
+
+          <br>
+          <br>
+          <br>
+          
+          
+    </div>
+
+
+
+
+    <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+        <div class="container">
+            <div class="row row-cols-1 row-cols-md-3 g-4">
+              <div class="col">
+                <div class="card">
+                  <img src="https://static.fundacion-affinity.org/cdn/farfuture/PVbbIC-0M9y4fPbbCsdvAD8bcjjtbFc0NSP3lRwlWcE/mtime:1643275542/sites/default/files/los-10-sonidos-principales-del-perro.jpg" class="card-img-top" alt="...">
+                </div>
+              </div>
+              <div class="col">
+                <div class="card">
+                  <img src="https://i.blogs.es/410bab/danielle-cerullo-cqfnt66ttzm-unsplash/1024_2000.webp" class="card-img-top" alt="...">
+                </div>
+              </div>
+              <div class="col">
+                <div class="card">
+                  <img src="https://upload.wikimedia.org/wikipedia/commons/9/96/Barbados_beach.jpg" class="card-img-top" alt="...">
+                </div>
+              </div>
+              <div class="col">
+                <div class="card">
+                  <img src="https://www.brillante.es/wp-content/uploads/2017/05/paella-mixta-800x477.jpg" class="card-img-top" alt="...">
+                </div>
+              </div>
+              <div class="col">
+                <div class="card">
+                  <img src="https://guiafitness.com/wp-content/uploads/esgrima-caracteristicas.jpg" class="card-img-top" alt="...">
+                </div>
+              </div>
+              <div class="col">
+                <div class="card">
+                  <img src="https://www.lavanguardia.com/uploads/2020/04/13/5f15f01852883.jpeg" class="card-img-top" alt="...">
+                </div>
+              </div>
+              <div class="col">
+                <div class="card">
+                  <img src="https://www.expedit.eu/media/11172/bakery-solutions01.jpg?mode=crop&heightratio=0.4845360824742268041237113402&width=1110" class="card-img-top" alt="...">
+                </div>
+              </div>
+              <div class="col">
+                <div class="card">
+                  <img src="https://images.unsplash.com/photo-1558871585-4c3574a1b7cd?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1171&q=80" class="card-img-top" alt="...">
+                </div>
+              </div>
+              <div class="col">
+                <div class="card">
+                  <img src="https://www.zoomadrid.com/content/dam/zoo/images/exhibits/actividad-educativa-de-aves-rapaces/Actividad-educativa-aves-rapaces-Zoo-Madrid-3.jpg" class="card-img-top" alt="...">
+                </div>
+              </div>
+            </div>
+          </div>
+          
+      
+       
+             
+          
+
+
+
+    
+   </div>
+    </div>
+
+    </div>
+  </div>
+  
+
+
+
+
+    </div>
+        
+
+        
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js" integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N" crossorigin="anonymous"></script>
+   
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+</body>
+</html>
